@@ -1,0 +1,630 @@
+/* Sass for later
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:300,400'); */
+
+/*** Global ***/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+
+.center {
+    margin: 0 auto;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.white {
+    color: white;
+}
+
+.cover {
+	background-size: cover;
+    background-position: center center;
+    margin-top: -60px
+}
+
+.tint {
+	height: 600px;
+    opacity: 1;
+    background-color: rgba(0,0,0,.5);
+    background-size: cover;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+
+.title-position {
+    top: 30%;
+    position: relative;
+}
+
+.break:after {
+    content: '\A';
+    white-space: pre;
+  }
+
+.thumb-cover {
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+}
+
+.overlay {
+    position: relative;
+  }
+  
+  .overlay:after {
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+  }
+  
+  .overlay:hover:after  {
+    opacity: .5;
+    background-color: black;
+  }
+
+.cat {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  min-width: 140px;
+  display: inline-block;
+  background-color: hsl(0, 0%, 0%);
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.spacer {
+    padding: 40px 0;
+}
+
+/*** Nav ***/
+.topbar-center-logo .top-bar-center {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-center-logo .top-bar-center {
+    display: none;
+  }
+
+  /* Terrill: top-bar needs to cover everything for this design spec */
+  .top-bar {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+  }
+
+  /* Terrill: class to toggle scrolling capability */
+  body.small-viewport-menu {
+    overflow-y: hidden;
+    height: 100%;
+  }
+}
+
+.topbar-center-logo-mobile .menu-icon {
+  vertical-align: text-top;
+}
+
+/* Overrides */
+.title-bar {
+    background-color: transparent !important;
+}
+
+.top-bar a {
+    color: white;
+}
+
+.top-bar a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.top-bar, .top-bar ul {
+    font-family: 'Roboto', sans-serif; 
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* terrill: only for medium-to-large */
+@media screen and (min-width: 39.9375em) {
+  .top-bar, .top-bar ul {
+    background-color: transparent !important;
+  }
+}
+
+/*** Home ***/
+
+.hero-position {
+    top: 20%;
+    position: relative;
+}
+
+.home-center {
+    text-align: center;
+}
+
+.tagline-pos {
+    margin-top: 100px;
+}
+
+.tagline-center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tagline {
+    font-family: 'Roboto', sans-serif; 
+    color: white;
+    font-size: 42px;
+    font-weight: 100;
+}
+
+.purple {
+    color: #8e12ce;
+}
+
+.more-posts-center {
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.more-posts {
+    border: 3px solid #000;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.more-posts a {
+    color: black;
+}
+
+.more-posts a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/*** Journal ***/
+
+.inner {
+    text-align: center;
+    position: relative;
+    top: 150%;
+    z-index: 1;
+}
+
+.thumb-title {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    font-size: 35px;
+}
+
+/*** POST PAGE ***/
+
+.post-cat {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: 120px;
+    background-color: black;
+    padding: 3px;
+    margin-bottom: 10px;
+  }
+
+  .post-cat a {
+    color: white;
+}
+
+.post-cat a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.page-title {
+	font-family: 'Permanent Marker', cursive;
+	font-weight: 900;
+	font-size: 72px;
+	text-align: center;
+	color: white;
+}
+
+@media screen and (max-width: 40em) {
+    .page-title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 40.063em) and (max-width: 64em) {
+    .page-title {
+        font-size: 52px;
+    }
+}
+
+main {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+main a {
+  border-bottom: solid 2px hsl(262, 52%, 47%);
+  color: black;
+}
+
+main a:hover {
+    color: black;
+    font-weight: normal;
+}
+
+.content {
+    padding-bottom: 50px;
+    line-height: 33px;
+}
+
+.line-gradient {
+    width: 70px;
+    height: 3px;
+    background: -webkit-linear-gradient(left, #000000, #910D91);
+    background: linear-gradient(to right, #070707, #8e12ce);
+}
+
+.by-line:after {
+    content: '\A';
+    white-space: pre;
+  }
+
+.by {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; 
+    line-height: 30px;
+}
+
+.author {
+    font-weight: 500;
+    line-height: inherit;
+    color: #8e12ce !important;
+    border: none;
+}
+
+.author a {
+    color: #8e12ce;
+}
+
+.author a:hover {
+    color: #8e12ce;
+    text-decoration: none;
+}
+
+  img { 
+    max-width: 100%; 
+  } 
+  
+  .full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+  p, figure {
+    margin: 15px 0;
+  }
+
+  figcaption {
+    text-align: center;
+    color: #999;
+  }
+
+
+  /*** Routers  ***/
+  
+  .hover {
+	position: relative;
+	z-index: 3;
+  }
+
+
+  .router {
+    margin-right: auto;
+    margin-left: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+
+.next {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 24px;
+	margin: 40px;
+	color: white;
+	text-align: right;
+
+	@media only screen and (max-width: 40em) {
+			line-height: 32px;
+		}
+
+	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+			line-height: 52px;
+		}
+}
+
+.previous {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 24px;
+	margin: 40px;
+	color: white;
+	text-align: left;
+
+	@media only screen and (max-width: 40em) {
+			line-height: 32px;
+		}
+
+	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+			line-height: 52px;
+		}
+}
+
+.next-router-title {
+	font-family: 'Permanent Marker', cursive;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 45px;
+	margin-right: 40px;
+	color: white;
+	text-align: right;
+
+	@media only screen and (max-width: 40em) {
+			line-height: 35px;
+		}
+}
+
+.previous-router-title {
+	font-family: 'Permanent Marker', cursive;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 45px;
+	margin-left: 40px;
+	color: white;
+	text-align: left;
+
+	@media only screen and (max-width: 40em) {
+			line-height: 35px;
+		}
+}
+
+  .next-previous {
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	display: inline-block;
+}
+
+.next-previous:hover > .shade {
+	position: absolute;
+	top: 0;
+	width:100%;
+	height:100%;
+	left: 0;
+	background-color:#000;
+	opacity:0.3;
+	z-index: 2;
+	display: block;
+}
+
+
+/*** PODCAST ***/
+
+iframe { 
+    padding: 15px;
+  }
+  
+    .page-info {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        line-height: 30px;
+    }
+  
+
+/*** Travel ***/
+
+.travel-card {
+    width: 280px;
+    height: 420px;
+    margin: 10px;
+    background:white;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
+  
+@media screen and (max-width: 40em) {
+    .travel-card {
+        margin: 10px auto;
+    }
+}
+
+  .tc-tint {
+    height: 415px;
+    opacity: 1;
+    background-color: rgba(0,0,0,.5);
+    background-size: cover;
+    z-index: 1;
+  }
+  
+  .tc-content {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:bold;
+    position: absolute;
+    bottom: 0;
+    line-height: 30px;
+    padding: 20px;
+    color: white;
+  }
+
+  .tc-line-gradient {
+      height: 6px;
+      background: -webkit-linear-gradient(left, #000000, #910D91);
+      background: linear-gradient(to right, #070707, #8e12ce);
+  }
+  
+  .city {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 48px;
+    color: white;
+  }
+
+  .btn {
+    width: 120px;
+    border: 2px solid white;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+ /*** About ***/ 
+
+.about-position {
+    padding: 80px 0;
+}
+
+.about-center {
+    text-align: center;
+}
+
+.about-tint {
+	height: 100%;
+    opacity: 1;
+    background-color: rgba(0,0,0,.5);
+    background-size: cover;
+    z-index: 1;
+}
+
+.about-title {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+.about p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+/*** Footer ***/
+
+.social {
+	margin-top: 50px;
+}
+
+footer {
+	height: 200px;
+    padding: 10px;
+	background: black;
+	text-align: center;
+    overflow: auto;
+    color: white;
+}
+
+.copyright {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.beer {
+    margin: 40px 0;
+}
+
+.beer h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.beer-icon {
+    background-color: #000;
+    text-align: center;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.stars-container {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    font-size: 12px;
+  }
+  
+  .stars-container:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '★★★★★';
+    color:lightgray;
+  }
+  
+  .stars-container:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '★★★★★';
+    color: gold;
+    overflow: hidden;
+  }
+  
+  .stars-0:after { width: 0%; }
+  .stars-10:after { width: 10%; }
+  .stars-20:after { width: 20%; }
+  .stars-30:after { width: 30%; }
+  .stars-40:after { width: 40%; }
+  .stars-50:after { width: 50%; }
+  .stars-60:after { width: 60%; }
+  .stars-70:after { width: 70%; }
+  .stars-80:after { width: 80%; }
+  .stars-90:after { width: 90%; }
+  .stars-100:after { width: 100%;}
