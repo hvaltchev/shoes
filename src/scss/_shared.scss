@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:300,400');
 
 $purple : #8e12ce;
+$black : #0B0C0D;
+$white : #FDFDFD;
+$dark-charcoal : #323231;
 
 * {
     box-sizing: border-box;
@@ -8,6 +11,7 @@ $purple : #8e12ce;
 
   body {
     overflow-x: hidden;
+    background-color: #FDFDFD;
   }
 
 .center {
@@ -24,7 +28,7 @@ main {
 .cover {
 	background-size: cover;
     background-position: center center;
-    margin-top: -60px
+    // margin-top: -60px
 }
 
 .tint {
@@ -86,5 +90,9 @@ main {
 }
 
 .spacer {
-    padding: 40px 0;
+  padding: 40px 0;
+}
+
+.text-center {
+  text-align: center;
 }
