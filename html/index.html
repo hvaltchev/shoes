@@ -15,10 +15,12 @@
     <meta name="theme-color" content="#ffffff">
     
     <!-- Libs CSS -->
-    <link rel="stylesheet" href="css/libs.bundle.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
     <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/theme.bundle.css" />
+    
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -59,7 +61,12 @@
     
           <!-- Navbar brand -->
           <a class="navbar-brand d-none d-lg-flex mx-lg-auto" href="#">
-           <img src="img/logo.png">
+            <div class="title">
+              <div class="soda">soda</div> 
+              <div class="amp">&amp;</div> 
+              <div class="clear"></div>
+              <div class="cookies">cookies</div>
+            </div>
           </a>
     
           <!-- Navbar nav -->
@@ -92,7 +99,7 @@
               </h1>
 
               <!-- Subheading -->
-              <p class="text-center text-white-75 mb-7">
+              <p class="text-center mb-7 white">
                 Hey, I'm Mike Watford. <br>I'm a professional photographer and short form video creator based in Northern California.
               </p>
 
@@ -100,7 +107,6 @@
               <a class="btn btn-outline-primary text-white text-primary-hover mb-7 mb-md-0" href="#reservation">
                 The Full Story
               </a>
-
             </div>
           </div>
         </div>
@@ -108,81 +114,141 @@
       </div>
     </header>
 
-    <!-- NEWSLETTER -->
-    <section class="py-7 py-md-9 bg-light">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6 text-center">
-
-            <!-- Heading -->
-            <h2 class="mb-2">
-              Newsletter
-            </h2>
-
-            <!-- Subheading -->
-            <p class="mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum, beatae maiores quae qui.
-            </p>
-
+    <section>
+      <div class="row g-0">
+        <div class="col">
+          <div class="border bg-light bg-cover" style="background-image: url(img/blog-holder.jpg); height: 480px;">
+            <div class="container">
+              <div class="row youtube">
+                <div class="col white">
+                  <div class="thumb-title-home">The Youtube Channel</div>
+                  <p>Videos on photography, sneakers, and creative indevours</p>
+                  <div class="col-sm-3 cta-button">Subscribe</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-
-            <!-- Begin Mailchimp Signup Form -->
-            <div id="mc_embed_signup">
-              <form action="https://gmail.us6.list-manage.com/subscribe/post?u=c7b7808bb5a16b9f09c4e1fe0&amp;id=96b8442f9a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-                <div class="row justify-content-center gx-3" id="mc_embed_signup_scroll">
-                  <div class="col">
-                    <label class="visually-hidden" for="mce-EMAIL">Email Address </label>
-                    <input class="form-control" type="email" value="" name="EMAIL" id="mce-EMAIL">
-                  </div>
-                  <div class="visually-hidden" id="mce-responses">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                  </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_c7b7808bb5a16b9f09c4e1fe0_96b8442f9a" tabindex="-1" value="">
-                  </div>
-                  <div class="col-auto">
-                    <input class="btn btn-outline-primary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
-                  </div>
+        <div class="col">
+          <div class="border bg-light bg-cover" style="background-image: url(img/blog-holder.jpg); height: 480px;">
+            <div class="container">
+              <div class="row align-self-end portfolio-home">
+                <div class="col white">
+                  <div class="thumb-title-home">The Portfolio</div>
+                  <p>Portaits, landscape, and more</p>
+                  <div class="col-sm-4 cta-button-right cta-button">The Collection</div>
                 </div>
-              </form>
+              </div>
             </div>
-            <!--End mc_embed_signup-->
-
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Shop Feature -->
+    <section class="py-7 py-md-9 bg-light bg-cover" style="background-image: url(img/blog-holder.jpg); height: 350px;">
+      <div class="container">
+        
+        <div class="row">
+          <div class="shop-eyebrow text-center">
+            Lastest Drop
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="shop-title text-center">
+            Soulful of Rice
+          </div>
+        </div>
+
+        <div class="shop-home">
+          <div class="cta-button-shop">
+            Shop
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Blog Feature -->
+    <section class="py-7">
+      <div class="container">
+        
+        <div class="row" style="text-transform: uppercase; margin-bottom: 20px;">
+          <div class="col">
+            Latest on the blog
+          </div>
+          <div class="col">
+            <div class="browse-post-home">Browse all Posts</div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center bg-cover" style="background-image: url(img/blog-holder.jpg); height: 350px;">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            Featured
+            <h3>Title of Post</h3>
+            <div class="button">Read More</div>
+          </div>
+        </div>
+
+        <!-- Blog thumbnails-->
+        <div class="row">
+          <div class="col border bg-cover" style="background-image: url(img/blog-holder.jpg); height: 480px;">
+            <div>Blog Title</div>
+          </div>
+          <div class="col border bg-cover" style="background-image: url(img/blog-holder.jpg); height: 480px;">
+            <div>Blog Title</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- FOOTER -->
-    <footer class="py-7 py-md-9">
+    <footer class="py-7 py-md-9" style="background-color: #323231;">
       <div class="container px-4">
         <div class="row gx-7">
           <div class="col-sm-3">
-            <!-- List -->
+
             <ul class="list-unstyled mb-6">
               <li class="d-flex mb-2"><a href="#">Blog</a></li>
               <li class="d-flex mb-2"><a href="#">Shop</a></li>
               <li class="d-flex mb-2"><a href="#">Portfolio</a></li>
-              <li class="d-flex mb-2"><a href="#">Book a Session</a></li>
+              <li class="d-flex mb-2"><a href="#">About</a></li>
             </ul>
           </div>
 
           <div class="col-sm-3">
-            <!-- List -->
             <ul class="list-unstyled mb-6">
-              <li class="d-flex mb-2"><a href="#">About</a></li>
               <li class="d-flex mb-2"><a href="#">Contact</a></li>
+              <li class="d-flex mb-2"><a href="#">Book a Session</a></li>
               <li class="d-flex mb-2"><a href="#">Instagram</a></li>
               <li class="d-flex mb-2"><a href="#">Twitter</a></li>
             </ul>
           </div>
           
           <div class="col-sm-4">
-    
+            <h3>Don't Miss out</h3>
+            <p>Stay in the know on creative indevours, new drops, and more.</p>
+            <!-- Begin Mailchimp Signup Form -->
+              <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7_dtp.css" rel="stylesheet" type="text/css">
+              <style type="text/css">
+                #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+              </style>
+              <div id="mc_embed_signup">
+              <form action="https://sodaandcookies.us14.list-manage.com/subscribe/post?u=8b5c7f7858670686d46ce8d08&amp;id=0f0eaa123a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" autocapitalize="off" autocorrect="off" type="email">
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8b5c7f7858670686d46ce8d08_0f0eaa123a" tabindex="-1" value=""></div>
+                      <div class="clear foot">
+                        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                          <img src="img/submit-arrow.png">
+                        </button>
+                      </div>
+                  </div>
+              </form>
+            </div>
           </div>
         </div>
 
@@ -190,11 +256,11 @@
     </footer>
 
     <div class="container-fluid bg-black">
-      <div class="row">
-        <div class="col-6">
+      <div class="row" style="padding: 25px;">
+        <div class="col-6 copyright">
           &copy 2022 SODA &AMP; COOKIES. All Rights Reserved.
         </div>
-        <div class="col-6">
+        <div class="col-6 disclosure" style="text-align: right;">
           <a href="#">Privacy &amp; Disclosure Policy</a>
         </div>
       </div>
