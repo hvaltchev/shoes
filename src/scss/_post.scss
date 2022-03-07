@@ -37,3 +37,10 @@
   float: right;
   text-align: right;
 }
+
+.divider {
+  border-top: 2px solid $black;
+  height: 40px;
+  width: 200px;
+  margin: 0 auto;
+}

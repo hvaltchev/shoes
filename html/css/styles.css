@@ -299,6 +299,13 @@ main {
   text-align: right;
 }
 
+.divider {
+  border-top: 2px solid #0B0C0D;
+  height: 40px;
+  width: 200px;
+  margin: 0 auto;
+}
+
 .about-position {
   padding: 80px 0;
 }
