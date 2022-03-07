@@ -262,129 +262,6 @@ main {
   border-color: white !important;
 }
 
-.post-cat {
-  text-align: center;
-  color: white;
-  font-style: italic;
-  font-size: 14px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  width: 160px;
-  background-color: black;
-  padding: 3px;
-  margin-bottom: 10px;
-}
-
-.post-cat a {
-  color: white;
-}
-
-.post-cat a:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.page-title {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 900;
-  font-size: 72px;
-  text-align: center;
-  color: white;
-}
-
-@media screen and (max-width: 40em) {
-  .page-title {
-    font-size: 32px;
-  }
-}
-@media screen and (min-width: 40.063em) and (max-width: 64em) {
-  .page-title {
-    font-size: 52px;
-  }
-}
-main {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-main a {
-  border-bottom: solid 2px #673ab6;
-  color: black;
-}
-
-main a:hover {
-  color: black;
-  font-weight: normal;
-}
-
-.content {
-  padding-bottom: 50px;
-  line-height: 33px;
-}
-
-.line-gradient {
-  width: 70px;
-  height: 3px;
-  background: -webkit-linear-gradient(left, #000000, #910D91);
-  background: linear-gradient(to right, #070707, #8e12ce);
-}
-
-.by-line:after {
-  content: "\a";
-  white-space: pre;
-}
-
-.by {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.author {
-  font-weight: 500;
-  line-height: inherit;
-  color: #8e12ce !important;
-  border: none;
-}
-
-.author a {
-  color: #8e12ce;
-}
-
-.author a:hover {
-  color: #8e12ce;
-  text-decoration: none;
-}
-
-main img {
-  width: 100vw;
-}
-
-.full-width {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  line-height: 22px;
-}
-
-p, figure {
-  margin: 15px 0;
-}
-
-figcaption {
-  text-align: center;
-  color: #999;
-}
-
 /*** Routers  ***/
 .hover {
   position: relative;
@@ -392,122 +269,34 @@ figcaption {
 }
 
 .router {
-  margin-right: auto;
-  margin-left: auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  margin-bottom: 50px;
 }
 
-.next {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+.router-title {
+  font-size: 24px;
+  color: #FDFDFD;
+  padding: 10px;
+  margin: 0;
+}
+
+.router-eyebrow {
   font-style: italic;
-  text-transform: uppercase;
-  font-size: 36px;
-  line-height: 24px;
-  margin: 40px;
-  color: white;
-  text-align: right;
+  font-size: 18px;
+  color: #FDFDFD;
+  padding: 10px;
+  margin: 0;
 }
-@media only screen and (max-width: 40em) {
-  .next {
-    line-height: 32px;
-    font-size: 30px;
-  }
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .next {
-    line-height: 52px;
-    font-size: 30px;
-  }
-}
-
-.previous {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  text-transform: uppercase;
-  font-size: 36px;
-  line-height: 24px;
-  margin: 40px;
-  color: white;
-  text-align: left;
-}
-@media only screen and (max-width: 40em) {
-  .previous {
-    line-height: 32px;
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .previous {
-    line-height: 52px;
-    font-size: 36px;
-  }
-}
-
-.next-router-title {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 45px;
-  margin-right: 40px;
-  color: white;
-  text-align: right;
-}
-@media only screen and (max-width: 40em) {
-  .next-router-title {
-    line-height: 35px;
-    font-size: 28px;
-  }
-}
-
-.previous-router-title {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 45px;
-  margin-left: 40px;
-  color: white;
-  text-align: left;
-}
-
-@media only screen and (max-width: 40em) {
-  .previous-router-title {
-    line-height: 35px;
-    font-size: 28px;
-  }
-}
-.next-previous {
-  height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-  display: inline-block;
-}
-
-.next-previous:hover > .shade {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  background-color: #000;
-  opacity: 0.3;
-  z-index: 2;
+.router-eyebrow span {
   display: block;
 }
 
-.posts-none {
-  text-align: center;
-  padding: 50px 0;
+.router-post {
+  margin-top: 80px;
 }
 
-.posts-none h3 {
-  font-family: "Permanent Marker", cursive;
+.align-right {
+  float: right;
+  text-align: right;
 }
 
 .about-position {
