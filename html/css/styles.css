@@ -77,6 +77,10 @@ p {
   margin: 0 auto;
 }
 
+.spacer {
+  height: 50px;
+}
+
 main {
   margin-top: 50px;
 }
@@ -134,9 +138,9 @@ main {
 
 .cta-button {
   border: 2px solid #FDFDFD;
-  width: 100px;
+  width: 150px;
   text-align: center;
-  padding: 5px;
+  padding: 20px;
   color: #FDFDFD;
   background-color: transparent;
 }
@@ -306,50 +310,46 @@ main {
   margin: 0 auto;
 }
 
-.about-position {
-  padding: 80px 0;
+.bottom-border {
+  border-bottom: 2px solid #0B0C0D !important;
 }
 
-.about-center {
+.southpaw {
+  float: left;
+}
+
+.send-button {
+  border: 2px solid #0B0C0D;
+  width: 200px;
   text-align: center;
+  padding: 20px;
+  color: #0B0C0D;
+  background-color: transparent;
+}
+.send-button:hover {
+  color: #FDFDFD !important;
+  background: #0B0C0D;
+  transition: 0.1s background-color linear, 0.1s color linear;
+  cursor: pointer;
+}
+.send-button:active {
+  color: #FDFDFD !important;
+  background: #0B0C0D;
 }
 
-.about-tint {
-  height: 100%;
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-size: cover;
-  z-index: 1;
+.eyebrow-date {
+  color: #faf8f0;
+  font-style: italic;
+  font-size: 12px;
 }
 
-.about-title {
-  font-family: "Permanent Marker", cursive;
-  color: white;
-}
-
-.about p {
-  font-size: 18px;
-  color: white;
-  line-height: 30px;
-  font-weight: normal;
-}
-
-.inner {
-  text-align: center;
-  position: relative;
-  top: 150%;
-  z-index: 1;
-}
-
-.thumb-title {
-  font-family: "Permanent Marker", cursive;
-  color: white;
-  font-size: 35px;
+.thumb-height {
+  height: 550px;
 }
 
 footer {
   color: #FDFDFD;
-  background-color: #323231;
+  background-color: #353739;
 }
 footer a {
   color: #FDFDFD;
