@@ -138,9 +138,9 @@ main {
 
 .cta-button {
   border: 2px solid #FDFDFD;
-  width: 150px;
+  width: 150px !important;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   color: #FDFDFD;
   background-color: transparent;
 }
