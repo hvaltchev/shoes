@@ -1,3 +1,15 @@
+.blog {
+
+    h1 {
+        margin-bottom: 0.5rem !important;
+    }
+}
+
+.sub-heading {
+    color: white;
+    font-size: 16px;
+}
+
 .eyebrow-date {
     color: #faf8f0;
     font-style: italic;
@@ -6,4 +18,38 @@
 
 .thumb-height {
     height: 550px;
+}
+
+.post-info {
+    margin-top: 150px !important;
+}
+
+.post-title-thumb {
+    font-size: 20px;
+    color: #FDFDFD;
+    padding-bottom: 10px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.keep-reading {
+    border: 2px solid #FDFDFD;
+    margin-top: 30px;
+    width: 140px !important;
+    text-align: center;
+    padding: 10px;
+    color: #FDFDFD;
+    background-color: transparent;
+
+    &:hover {
+        color: $black !important;
+        background: $white;
+        transition: 0.1s background-color linear, 0.1s color linear;
+        cursor: pointer;
+    }
+    
+    &:active {
+        color: $black !important;
+        background: $white;
+      } 
 }
