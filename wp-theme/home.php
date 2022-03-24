@@ -2,6 +2,13 @@
 /*
 Template Name: Home
 */
+
+$args = array( 
+    'posts_per_page' => 2, 
+    'post_type' => 'post', 
+    'post_status' => 'publish' 
+);
+
 ?>
 
 <?php get_header(); ?>
@@ -103,34 +110,37 @@ Template Name: Home
           </div>
         </div>
 
-        <div class="row justify-content-center bg-cover" style="background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(img/blog-holder.jpg); height: 350px;">
-          <div class="col-12 col-md-8 col-lg-6 text-center featured-post">
-            <div class="eyebrow">Featured</div>
-            <div class="featured-title">Title of Post</div>
-            <a href="#">
-              <div class="cta-button center">Keep Reading</div>
-            </a>
-          </div>
-        </div>
+        <?php if(is_home() && !is_paged()) { ?>
+        <?php query_posts (array('post_in'=>get_option('sticky_posts'))); ?>
+        <?php while (have_posts()) : the_post(); ?>    
+            <div class="row justify-content-center bg-cover" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="height: 350px; background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
+            <div class="col-12 col-md-8 col-lg-6 text-center featured-post">
+                <div class="eyebrow">Featured</div>
+                <div class="featured-title"><?php the_title(); ?></div>
+                <a href="<?php the_permalink(); ?>">
+                <div class="cta-button center">Keep Reading</div>
+                </a>
+            </div>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_query(); ?>
+        <?php } ?>
 
         <!-- Blog thumbnails-->
         <div class="row">
-          <div class="col border bg-cover" style="background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(img/blog-holder.jpg); height: 480px;">
-            <div class="col-12 col-md-8 col-lg-6 text-center blog-post-home center">
-              <h3 class="blog-title-home">Title of Post</h3>
-              <a href="#">
-                <div class="cta-button center">Keep Reading</div>
-              </a>
+        
+            <?php query_posts(array("post_not_in" =>get_option("sticky_posts"), 'paged' => get_query_var('paged'))); ?>
+            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>  
+        
+            <div class="col border bg-cover" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="height: 480px; background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
+                <div class="col-12 col-md-8 col-lg-6 text-center blog-post-home center">
+                    <h3 class="blog-title-home"><?php the_title(); ?></h3>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="cta-button center">Keep Reading</div>
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="col border bg-cover" style="background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(img/blog-holder.jpg); height: 480px;">
-            <div class="col-12 col-md-8 col-lg-6 text-center blog-post-home center">
-              <h3 class="blog-title-home">Title of Post</h3>
-              <a href="#">
-                <div class="cta-button center">Keep Reading</div>
-              </a>
-            </div>
-          </div>
+          
         </div>
 
         <?php endwhile; ?>
