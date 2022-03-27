@@ -26,7 +26,7 @@
             <a href="<?php the_permalink(); ?>">
               <div class="p-3 border bg-cover thumb-height" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
                 <div class="col-lg-8 col-md-8 post-info">
-                  <div class="eyebrow-date"><?php the_time('jS F Y'); ?></div>
+                  <div class="eyebrow-date"><?php the_time('F j, Y'); ?></div>
                   <h3 class="post-title-thumb"><?php the_title(); ?></h3>
                   <div class="keep-reading">Keep Reading</div>
                 </div>

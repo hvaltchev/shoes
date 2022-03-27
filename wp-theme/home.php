@@ -9,6 +9,8 @@ $args = array(
     'post_status' => 'publish' 
 );
 
+$loop = new WP_Query( $args );
+
 ?>
 
 <?php get_header(); ?>
@@ -113,6 +115,7 @@ $args = array(
         <?php if(is_home() && !is_paged()) { ?>
         <?php query_posts (array('post_in'=>get_option('sticky_posts'))); ?>
         <?php while (have_posts()) : the_post(); ?>    
+
             <div class="row justify-content-center bg-cover" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="height: 350px; background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
             <div class="col-12 col-md-8 col-lg-6 text-center featured-post">
                 <div class="eyebrow">Featured</div>
@@ -122,6 +125,7 @@ $args = array(
                 </a>
             </div>
             </div>
+            
         <?php endwhile; ?>
         <?php wp_reset_query(); ?>
         <?php } ?>
@@ -130,7 +134,7 @@ $args = array(
         <div class="row">
         
             <?php query_posts(array("post_not_in" =>get_option("sticky_posts"), 'paged' => get_query_var('paged'))); ?>
-            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>  
+            <?php if ( have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>  
         
             <div class="col border bg-cover" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="height: 480px; background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
                 <div class="col-12 col-md-8 col-lg-6 text-center blog-post-home center">
@@ -140,15 +144,17 @@ $args = array(
                     </a>
                 </div>
             </div>
+
+            <?php endwhile; ?>
+            <?php else : ?>
+
+            <?php get_template_part( 'inc/post-none' ); ?>
+
+            <?php endif; ?>
           
         </div>
 
-        <?php endwhile; ?>
-	    <?php else : ?>
-
-	    <?php get_template_part( 'inc/post-none' ); ?>
-
-	    <?php endif; ?>
+        
 
       </div>
     </section>

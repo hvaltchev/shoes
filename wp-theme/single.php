@@ -10,7 +10,7 @@
         <div class="col-12 col-md-8 col-lg-8 text-center">
 
           <!-- Preheading -->
-          <h6 class="text-xs text-primary"><?php the_time('jS F Y'); ?> </h6>
+          <h6 class="text-xs text-primary"><?php the_time('F j, Y'); ?></h6>
 
           <!-- Heading -->
           <h1 class="display-2 mb-4"><?php the_title(); ?></h1>
