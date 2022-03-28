@@ -461,23 +461,31 @@ footer h3 {
 }
 
 form input[type=email], form input[type=number], form input[type=password], form input[type=text] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
   background: transparent !important;
-  border: none;
-  border-radius: 0;
-  color: currentColor;
-  display: block;
-  font-size: 18px;
-  line-height: 2;
-  outline: none;
-  width: 100%;
-  padding-left: 0;
+  border: none !important;
+  border-radius: 0 !important;
+  color: currentColor !important;
+  display: block !important;
+  font-size: 18px !important;
+  line-height: 2 !important;
+  outline: none !important;
+  width: 100% !important;
+  padding: 0 !important;
+  height: 40px !important;
+  margin-left: -15px !important;
 }
 
-.email {
-  margin-left: -15px;
+#mc_embed_signup input.email {
+  border: none !important;
+  color: #FDFDFD !important;
+}
+
+#mc_embed_signup .button {
+  background: transparent !important;
+  margin: 0 0 0 -15px;
 }
 
 .form.mailchimp form {

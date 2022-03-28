@@ -37,7 +37,7 @@
               <form action="https://sodaandcookies.us14.list-manage.com/subscribe/post?u=8b5c7f7858670686d46ce8d08&amp;id=0f0eaa123a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                   <div id="mc_embed_signup_scroll" class="row footer-newsletter">
                     <div class="col">
-                      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required="" autocapitalize="off" autocorrect="off" type="email">
+                      <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email Address" required="" autocapitalize="off" autocorrect="off" type="email">
                     </div>
                   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div style="position: absolute; left: -5000px;" aria-hidden="true">
@@ -45,7 +45,7 @@
                   </div>
                     <div class="col">
                         <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                          <img src="<?php bloginfo('template_url'); ?>/ img/submit-arrow.png" height="50" width="50">
+                          <img src="<?php bloginfo('template_url'); ?>/img/submit-arrow.png" height="50" width="50">
                         </button>
                     </div>
                       </div>
