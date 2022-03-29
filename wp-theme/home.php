@@ -14,6 +14,14 @@ if ( !empty( $sticky ) ) {
     $query = new WP_Query( $args );
 }
 
+$home = array(
+    'post_type' => 'post',
+    'posts_per_page' => 2,
+    'ignore_sticky_posts' => true,
+  );
+
+  $loop = new WP_Query( $home );
+
 ?>
 
 <?php get_header(); ?>
@@ -138,10 +146,9 @@ if ( !empty( $sticky ) ) {
 
         <!-- Blog recent-->
         <div class="row">
-        
-            <?php query_posts(array("post__not_in" =>get_option("sticky_posts"), 'paged' => get_query_var('paged'))); ?>
-            <?php if (have_posts()) : ?>
-            <?php while (have_posts()) : the_post(); ?>  
+              
+        <?php if ( $loop->have_posts() ) : ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         
             <div class="col border bg-cover" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="height: 480px; background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
                 <div class="col-12 col-md-8 col-lg-6 text-center blog-post-home center">
