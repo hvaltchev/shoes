@@ -4,6 +4,16 @@
 Template Name: Home
 */
 
+$sticky = get_option( 'sticky_posts' );
+if ( !empty( $sticky ) ) { 
+    $args = array(
+        'posts_per_page' => 1,
+        'post__in'  => $sticky,
+    );
+
+    $query = new WP_Query( $args );
+}
+
 ?>
 
 <?php get_header(); ?>
@@ -107,12 +117,11 @@ Template Name: Home
         <!-- Blog Feature -->
         <div class="row">
         
-            <?php if(is_home() && !is_paged()) { ?>
-            <?php query_posts(array('post__in'=>get_option('sticky_posts'))); ?>
-            <?php while (have_posts()) : the_post(); ?>
+        <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
             <div class="col justify-content-center bg-cover" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="height: 350px; background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
-                <div class="col-12 col-md-8 col-lg-6 text-center featured-post">
+                <div class="col-12 text-center featured-post">
                     <div class="eyebrow">Featured</div>
                     <div class="featured-title"><?php the_title(); ?></div>
                     <a href="<?php the_permalink(); ?>">
@@ -121,9 +130,9 @@ Template Name: Home
                 </div>
             </div>
 
-            <?php endwhile; ?>
-            <?php wp_reset_query(); ?>
-            <?php } ?>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
 
         </div>
 
