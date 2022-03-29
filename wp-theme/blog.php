@@ -1,4 +1,5 @@
 <?php
+
 /*
 Template Name: Blog
 */
@@ -26,8 +27,9 @@ Template Name: Blog
       <div class="container">
         <div class="row g-2">
         
-        <?php if (have_posts()) : ?>
-        <?php while (have_posts()) : the_post(); ?>
+        <?php $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'order' => 'date', 'posts_per_page'=>12)); ?>
+	      <?php if ( $wpb_all_query->have_posts() ) : ?>
+        <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
         
         <div class="col-lg-4 col-md-6 col-sm-12">
             <a href="<?php the_permalink(); ?>">
