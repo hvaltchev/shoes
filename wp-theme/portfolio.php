@@ -57,7 +57,7 @@ $link = get_field('');
       </div>
     </section>
 
-    <?php get_template_part( 'inc/sessions' ); ?> 
+    <?php get_template_part( 'inc/booking' ); ?> 
 
     <?php wp_reset_postdata(); ?>
 

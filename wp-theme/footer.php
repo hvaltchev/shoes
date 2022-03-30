@@ -19,7 +19,7 @@
           <div class="col-sm-2 col-md-2">
             <ul class="list-unstyled mb-6">
               <li class="d-flex mb-2"><a href="/contact/">Contact</a></li>
-              <li class="d-flex mb-2"><a href="/sessions/">Book a Session</a></li>
+              <li class="d-flex mb-2"><a href="/booking/">Book a Session</a></li>
               <li class="d-flex mb-2"><a href="https://www.instagram.com/bodegastaples/">Instagram</a></li>
               <li class="d-flex mb-2"><a href="https://twitter.com/bodegastaples">Twitter</a></li>
             </ul>
@@ -64,7 +64,7 @@
           &copy <?php echo date('Y'); ?> SODA &AMP; COOKIES. All Rights Reserved.
         </div>
         <div class="col-6 disclosure">
-          <a href="/disclosure-policy/">Privacy &amp; Disclosure Policy</a>
+          <a href="/privacy-policy/">Privacy &amp; Disclosure Policy</a>
         </div>
       </div>
     </div>

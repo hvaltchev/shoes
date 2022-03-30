@@ -60,6 +60,6 @@ As an adult, holding that mentality can be difficult. A way to catch my inspirat
       </div>
     </section>
 
-    <?php get_template_part( 'inc/sessions' ); ?>
+    <?php get_template_part( 'inc/booking' ); ?>
 
 <?php get_footer(); ?>

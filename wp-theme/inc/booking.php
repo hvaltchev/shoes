@@ -18,7 +18,7 @@
                 </p>
 
                 <!-- Button -->
-                <a class="cta-button" href="/sessions/">Book a Session</a>
+                <a class="cta-button" href="/booking/">Book a Session</a>
 
               </div>
             </div>

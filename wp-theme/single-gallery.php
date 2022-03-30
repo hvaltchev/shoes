@@ -11,7 +11,7 @@
             <div class="col-12 col-md-8 col-lg-6 text-center">
 
               <!-- Heading -->
-              <h1 class="display-6 fw-bold text-white header-margin">Protraits</h1>
+              <h1 class="display-6 fw-bold text-white header-margin"><?php the_title(); ?></h1>
               <span class="sub-heading">Human faces are cool to see</span>
             </div>
           </div>
@@ -106,6 +106,6 @@
       </div>
     </section>
 
-    <?php get_template_part( 'inc/sessions' ); ?>
+    <?php get_template_part( 'inc/booking' ); ?>
 
     <?php get_footer(); ?>
