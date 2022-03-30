@@ -25,9 +25,7 @@ Template Name: About
           <div class="col-12 col-md-8 col-lg-6 text-center">
 
             <!-- Heading -->
-            <h2 class="mb-2">
-                SODA &amp; COOKIES
-            </h2>
+            <h2 class="mb-2">SODA &amp; COOKIES</h2>
 
             <!-- Subheading -->
             <p class="mb-6">
@@ -62,17 +60,6 @@ As an adult, holding that mentality can be difficult. A way to catch my inspirat
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        <div class="mt-6 mt-md-9 mb-0 divider"></div>
-      </div>
-    </section>
-
-<?php endwhile; ?>
-<?php else : ?>
-
-<?php get_template_part( 'inc/post-none' ); ?>
-
-<?php endif; ?>
+    <?php get_template_part( 'inc/sessions' ); ?>
 
 <?php get_footer(); ?>

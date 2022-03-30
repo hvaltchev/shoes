@@ -3,8 +3,8 @@
 	<?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
-<!-- HEADER -->
-<header data-jarallax data-speed=".8" style="background-image: url(img/blog-holder.jpg);">
+    <!-- HEADER --> 
+    <header data-jarallax data-speed=".8" style="background-image: url(img/blog-holder.jpg);">
       <div class="pt-10 pb-8 pt-md-15 pb-md-13 bg-black-50">
         <div class="container">
           <div class="row justify-content-center">
