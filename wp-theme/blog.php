@@ -4,6 +4,16 @@
 Template Name: Blog
 */
 
+$paged = get_query_var('paged')? get_query_var('paged') : 1;
+
+$wpb_all_query = new WP_Query(array(
+  'post_type'=>'post', 
+  'post_status'=>'publish', 
+  'orderby'=>'date', 
+  'posts_per_page'=> 12,
+  'paged' => $paged,
+));
+
 ?>
 
 <?php get_header(); ?> 
@@ -27,7 +37,6 @@ Template Name: Blog
       <div class="container">
         <div class="row g-2">
         
-        <?php $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'order' => 'date', 'posts_per_page'=>12)); ?>
 	      <?php if ( $wpb_all_query->have_posts() ) : ?>
         <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
         
@@ -51,7 +60,20 @@ Template Name: Blog
         <?php endif; ?>
           
         </div>
+
+      <!-- Pagination -->
+      <div class="row g-2 pagination">
+      
+        <div class="col-lg-6">
+          <?php next_posts_link( 'Older posts', $wpb_all_query ->max_num_pages); ?>
+        </div>
+        
+        <div class="col-lg-6 text-right">
+          <?php previous_posts_link( 'Newer posts' ); ?>
+        </div>
+
       </div>
+
     </section>
 
 <?php get_footer(); ?>
