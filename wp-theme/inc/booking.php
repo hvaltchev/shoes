@@ -8,13 +8,11 @@
               <div class="col-md-8 col-lg-5">
 
                 <!-- Heading -->
-                <h2 class="mb-3 text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptas, aut ea quae!
-                </h2>
+                <h2 class="mb-3 text-white">Ready to work together</h2>
 
                 <!-- Description -->
                 <p class="mb-6 text-white-75">
-                  Alias earum, labore doloremque iusto a modi et, dolorem veritatis iste quis ab. Facere est optio, voluptate molestias aspernatur impedit perferendis odit?
+                It's probably time to get that headshot retaken, right? Got fresh kicks and you want to show them off? Then let's get it going!
                 </p>
 
                 <!-- Button -->

@@ -316,19 +316,59 @@ main {
 
 .bottom-border {
   border-bottom: 2px solid #0B0C0D !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
 }
 
 .southpaw {
   float: left;
 }
 
-.send-button {
+textarea {
+  border: none !important;
+  width: 600px !important;
+  height: 200px !important;
+}
+
+div.wpforms-container-full .wpforms-form input[type=text] {
+  margin-left: 0 !important;
+}
+
+div.wpforms-container-full .wpforms-form input[type=email] {
+  margin-left: 0 !important;
+}
+
+div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea {
+  padding: 0;
+}
+
+div.wpforms-container-full .wpforms-form button[type=submit] {
   border: 2px solid #0B0C0D;
   width: 200px;
   text-align: center;
   padding: 20px;
   color: #0B0C0D;
   background-color: transparent;
+}
+div.wpforms-container-full .wpforms-form button[type=submit]:hover {
+  color: #FDFDFD !important;
+  background-color: #0B0C0D !important;
+  transition: 0.1s background-color linear, 0.1s color linear;
+  cursor: pointer;
+}
+div.wpforms-container-full .wpforms-form button[type=submit]:active {
+  color: #FDFDFD !important;
+  background-color: #0B0C0D !important;
+}
+
+.send-button {
+  border: 2px solid #0B0C0D !important;
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  color: #0B0C0D !important;
+  background-color: transparent !important;
 }
 .send-button:hover {
   color: #FDFDFD !important;
@@ -398,58 +438,6 @@ main {
 
 .text-right {
   text-align: right;
-}
-
-ul.page-numbers {
-  list-style: none;
-  margin: 0;
-}
-
-.page-numbers:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-ul.page-numbers li {
-  display: block;
-  float: left;
-  margin: 0 4px 4px 0;
-  text-align: center;
-}
-
-.page-numbers a,
-.page-numbers span {
-  line-height: 1.6em;
-  display: block;
-  padding: 0 6px;
-  height: 18px;
-  line-height: 18px;
-  font-size: 12px;
-  text-decoration: none;
-  font-weight: 400;
-  cursor: pointer;
-  border: 1px solid #ddd;
-  color: #888;
-}
-
-.page-numbers a span {
-  padding: 0;
-}
-
-.page-numbers a:hover,
-.page-numbers.current,
-.page-numbers.current:hover {
-  color: #000;
-  background: #f7f7f7;
-  text-decoration: none;
-}
-
-.page-numbers:hover {
-  text-decoration: none;
 }
 
 footer {
