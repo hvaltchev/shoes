@@ -23,15 +23,18 @@ Template Name: About
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-8 col-lg-6 text-center">
+          
+          <?php if (have_posts()) : ?>
+          <?php while (have_posts()) : the_post(); ?>
 
             <!-- Heading -->
-            <h2 class="mb-2">SODA &amp; COOKIES</h2>
+            <h2 class="mb-2">
+              <?php the_field('heading'); ?>
+            </h2>
 
             <!-- Subheading -->
             <p class="mb-6">
-            This is about creative nostalgia. Going to the corner store as a kid this was my staple. My lunch money would never be used for actual food. Instead it would be used to buy a sprite and whatever the option of grandma's cookies that were available. I would find a spot alone to draw, jot down ideas and just have my head in the clouds..
-
-As an adult, holding that mentality can be difficult. A way to catch my inspiration and get into a creative flow again was to give myself this site. A medium for my creative outlet and acting design journal. Hoping to bring back a spark of those carefree days.
+              <?php the_field('sub-heading'); ?>
             </p>
 
           </div>
@@ -40,20 +43,25 @@ As an adult, holding that mentality can be difficult. A way to catch my inspirat
           <div class="col-md-6 order-md-2">
 
             <!-- Image -->
-            <img class="img-fluid mw-md-120 clip-top-start" src="<?php bloginfo('template_directory'); ?>/img/blog-holder.jpg" alt="...">
+            <img class="img-fluid mw-md-120 clip-top-start" src="<?php bloginfo('template_directory'); ?>/img/about-sc.jpg" alt="About Soda and Cookies">
 
           </div>
           <div class="col-md-5 order-md-1">
 
             <!-- Text -->
             <p class="lead text-black">
-              Mike Watford
+            <?php the_field('lead-heading'); ?>
             </p>
 
             <!-- Text -->
             <p class="mb-6">
-            Pixel pusher from the east coast turned developer in the west coast. For five years I did freelance photography ran my own apparel company before making my way to silicon valley.
+            <?php the_field('lead-content'); ?>
             </p>
+          
+            <?php endwhile; ?>
+
+            <?php endif; ?>
+
 
           </div>
         </div>

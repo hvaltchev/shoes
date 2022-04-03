@@ -1,7 +1,12 @@
 <?php get_header('light'); ?>
 
+<?php 
+$thumbnail_id = get_post_thumbnail_id( $post->ID );
+$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);  
+?>
+
 	<?php if (have_posts()) : ?>
-    <?php while (have_posts()) : the_post(); ?>
+  <?php while (have_posts()) : the_post(); ?>
 
 <!-- ARTICLE -->
 <article class="pt-10 pt-md-12">
@@ -17,7 +22,7 @@
 
           <!-- Subheading -->
           <p class="mb-6">
-            Jennifer. About 30 years, it's a nice round number. It's my dad. Yeah, he's right here. He's a peeping tom. Dad.
+            <?php the_field('sub-heading'); ?>
           </p>
 
         </div>
@@ -27,7 +32,7 @@
 
           <!-- Image -->
           <figure class="mb-6 text-center">
-            <img class="img-fluid" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'src="url('. $url.');" alt="..."' ?>>
+            <img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo $alt; ?>">
           </figure>
 
         </div>
@@ -78,7 +83,7 @@
             <a href="<?php echo get_permalink($previous->ID); ?>">
               <div class="col-12 col-md-8 col-lg-6 router-post">
                 <span class="router-eyebrow">First things first</span>
-                <h3 class="router-title">Take it from the top</h3>
+                <h3 class="router-title">Welcome to the begining</h3>
               </div>
             </a>
           </div>
@@ -101,7 +106,7 @@
         <div class="col-lg-6 col-sm-12 border bg-cover">
           <a href="<?php echo get_permalink($next->ID); ?>">
             <div class="col-12 col-md-8 col-lg-6 router-post align-right">
-              <span class="router-eyebrow">Last but not least</span>
+              <span class="router-eyebrow">Stayed Tuned</span>
               <h3 class="router-title">New stuff coming soon</h3>
             </div>
           </a>
