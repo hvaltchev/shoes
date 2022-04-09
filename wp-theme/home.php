@@ -90,7 +90,7 @@ $home = array(
     </section>
 
     <!-- Shop Feature -->
-    <section class="py-7 py-md-9 bg-light bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(img/blog-holder.jpg); height: 350px;">
+    <section class="py-7 py-md-9 bg-light bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(<?php the_field('featured_image'); ?>); height: 350px;">
       <div class="container">
         
         <div class="row">
@@ -98,10 +98,10 @@ $home = array(
         </div>
 
         <div class="row">
-          <div class="shop-title text-center">Soulful of Rice</div>
+          <div class="shop-title text-center"><?php the_field('title'); ?></div>
         </div>
 
-        <a href="/shop/">
+        <a href="<?php the_field('shop_link'); ?>">
           <div class="shop-home cta-button">Shop</div>
         </a>
 
