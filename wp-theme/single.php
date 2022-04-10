@@ -79,7 +79,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
     
     <?php } else { ?>
 
-        <div class="col-lg-6 col-sm-12 border bg-cover">
+        <div class="col-lg-6 col-sm-12 border" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(<?php bloginfo('template_url'); ?>/img/router-prev.jpg); height: 250px;">
             <a href="<?php echo get_permalink($previous->ID); ?>">
               <div class="col-12 col-md-8 col-lg-6 router-post">
                 <span class="router-eyebrow">First things first</span>
@@ -103,7 +103,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
         
     <?php } else { ?>
 
-        <div class="col-lg-6 col-sm-12 border bg-cover">
+        <div class="col-lg-6 col-sm-12 border" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(<?php bloginfo('template_url'); ?>/img/router-next.jpg); height: 250px;">
           <a href="<?php echo get_permalink($next->ID); ?>">
             <div class="col-12 col-md-8 col-lg-6 router-post align-right">
               <span class="router-eyebrow">Stayed Tuned</span>

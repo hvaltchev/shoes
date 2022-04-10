@@ -4,7 +4,7 @@
     <?php while (have_posts()) : the_post(); ?>
 
     <!-- HEADER --> 
-    <header data-jarallax data-speed=".8" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
+    <header data-jarallax data-speed=".8" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="margin-top: -50px; background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
       <div class="pt-10 pb-8 pt-md-15 pb-md-13 bg-black-50">
         <div class="container">
           <div class="row justify-content-center">

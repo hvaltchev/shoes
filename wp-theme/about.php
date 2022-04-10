@@ -7,7 +7,7 @@ Template Name: About
 <?php get_header(); ?>
 
     <!-- HEADER -->
-    <header data-jarallax data-speed=".8" style="background-image: url(img/blog-holder.jpg);">
+    <header data-jarallax data-speed=".8" style="margin-top: -50px; background-image: url(img/blog-holder.jpg);">
         <div class="pt-10 pb-8 pt-md-15 pb-md-13 bg-black-50">
             <div class="container">
             <div class="row justify-content-center">
