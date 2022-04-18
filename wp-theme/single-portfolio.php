@@ -20,8 +20,53 @@
     </header>
 
     <!-- GALLERY -->
+    <!-- GALLERY -->
     <section class="py-7 py-md-9">
-      <?php the_content(' '); ?>
+      <div class="container">
+        <div class="row gx-3" data-isotope>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_1'); ?>" }'>
+              <img class="img-fluid" src="<?php the_field('gallery_1'); ?>" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_2'); ?>" }'>
+              <img class="img-fluid" src="<?php the_field('gallery_2'); ?>" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_3'); ?>" }'>
+              <img class="img-fluid" src="<?php the_field('gallery_3'); ?>" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_4'); ?>" }'>
+              <img class="img-fluid" src="<?php the_field('gallery_4'); ?>" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_5'); ?>" }'>
+              <img class="img-fluid" src="<?php the_field('gallery_5'); ?>" alt="...">
+            </a>
+
+          </div>
+          
+        </div>
+      </div>
     </section>
 
     <?php endwhile; ?>

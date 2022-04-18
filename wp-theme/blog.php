@@ -69,7 +69,7 @@ $wpb_all_query = new WP_Query(array(
         </div>
         
         <div class="col-lg-4 text-center">
-        <?php echo $paged.' / '.$wp_query->max_num_pages; ?>
+        <?php echo $paged.' / '.$wpb_all_query->max_num_pages; ?>
         </div>
 
         <div class="col-lg-4 text-right">
