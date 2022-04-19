@@ -11,6 +11,7 @@ $wpb_all_query = new WP_Query(array(
   'post_status'=>'publish', 
   'orderby'=>'date', 
   'posts_per_page'=> 12,
+  'ignore_sticky_posts' => 1,
   'paged' => $paged,
 ));
 
