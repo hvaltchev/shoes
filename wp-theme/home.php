@@ -17,7 +17,7 @@ if ( !empty( $sticky ) ) {
 $home = array(
     'post_type' => 'post',
     'posts_per_page' => 2,
-    'ignore_sticky_posts' => true,
+    'post__not_in' => get_option( 'sticky_posts' ),
   );
 
   $loop = new WP_Query( $home );
