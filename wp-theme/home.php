@@ -27,7 +27,7 @@ $home = array(
 <?php get_header(); ?>
 
 <!-- WELCOME -->
-<header data-jarallax data-speed=".8" style="margin-top: -50px; background-image: url(<?php bloginfo('template_url'); ?>/img/blog-holder.jpg);">
+<header data-jarallax data-speed=".8" style="margin-top: -50px; background-image: url(<?php bloginfo('template_url'); ?>/img/soda.jpg);">
       <div class="d-flex flex-column min-vh-100 bg-black-50 pt-10 pt-md-8 pb-7 pb-md-0">
         <div class="container my-auto">
           <div class="row justify-content-center">
@@ -57,7 +57,7 @@ $home = array(
     <section>
       <div class="row g-0">
         <div class="col">
-          <div class="border bg-light bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(img/blog-holder.jpg); height: 480px;">
+          <div class="border bg-light bg-cover youtube-bg">
             <div class="container">
               <div class="row youtube">
                 <div class="col white">

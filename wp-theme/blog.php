@@ -20,7 +20,7 @@ $wpb_all_query = new WP_Query(array(
 <?php get_header(); ?> 
  
  <!-- HEADER -->
- <header class="blog" data-jarallax data-speed=".8" style="margin-top: -50px; background-image: url(img/blog-holder.jpg);">
+ <header class="blog blog-bg" data-jarallax data-speed=".8">
       <div class="pt-10 pb-8 pt-md-15 pb-md-13 bg-black-50">
         <div class="container">
           <div class="row justify-content-center">

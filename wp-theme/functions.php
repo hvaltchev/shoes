@@ -16,6 +16,12 @@ function no_wordpress_errors(){
 }
 add_filter( 'login_errors', 'no_wordpress_errors' );
 
+function mycustom_embed_defaults($embed_size){
+  $embed_size['width'] = 620;
+  $embed_size['height'] = 360;
+  return $embed_size;
+  }
+  add_filter('embed_defaults', 'mycustom_embed_defaults');
 
 if ( ! function_exists( 'sodaandcookies_support' ) ) :
 
@@ -73,7 +79,7 @@ if ( ! function_exists('custom_theme_features') ) {
   add_action( 'after_setup_theme', 'custom_theme_features' );
   
   }
-
+  
 /*********************
 REMOVE QUERY STRING FROM URL
 *********************/
