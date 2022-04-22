@@ -1,7 +1,6 @@
 <?php
 /*
-Template Name: Porfolio
-Template Post Types: 
+Template Name: Portfolio 
 */
 
 $args = array(  
@@ -27,6 +26,7 @@ $loop = new WP_Query( $args );
               <!-- Heading -->
               <h1 class="display-6 fw-bold text-white header-margin"><?php the_title(); ?></h1>
               <span class="sub-heading"><?php the_field('sub-heading'); ?></span>
+              <div class="reel"><a href="<?php the_field('video_url'); ?>">Cinematographer Reel</a></div>
             </div>
           </div>
         </div>
@@ -39,10 +39,10 @@ $loop = new WP_Query( $args );
         
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-        <div class="col-6">
+        <div class="col-lg-6 col-sm-12">
             <a href="<?php the_permalink(); ?>">
               <div class="p-3 border bg-cover thumb-height bg-black-50" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
-                <div class="col-12 col-md-8 col-lg-6 text-center blog-post-home center">
+                <div class="col-12 text-center post-portfolio center">
                   <h3 class="blog-title-home"><?php the_title(); ?></h3>
                 </div>
               </div>

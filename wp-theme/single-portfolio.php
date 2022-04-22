@@ -20,7 +20,6 @@
     </header>
 
     <!-- GALLERY -->
-    <!-- GALLERY -->
     <section class="py-7 py-md-9">
       <div class="container">
         <div class="row gx-3" data-isotope>
@@ -64,6 +63,46 @@
             </a>
 
           </div>
+          <!-- <div class="col-6 col-sm-6 col-md-4">
+
+            
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_6'); ?>" }'>
+              <img class="img-fluid" src="<?php the_field('gallery_6'); ?>" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_7'); ?>" }'>
+              <img class="img-fluid" src="<?php the_field('gallery_7'); ?>" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_8'); ?>" }'>
+              <img class="img-fluid" src="<?php the_field('gallery_8'); ?>" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_9'); ?>" }'>
+              <img class="img-fluid" src="<?php the_field('gallery_9'); ?>" alt="...">
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+
+            
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_10'); ?>" }'>
+              <img class="img-fluid" src="<?php the_field('gallery_10'); ?>" alt="...">
+            </a>
+
+          </div> -->
           
         </div>
       </div>

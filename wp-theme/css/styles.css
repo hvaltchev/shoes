@@ -115,8 +115,14 @@ main {
   text-align: center;
   font-style: italic;
   font-size: 30px;
+  margin-left: 50px;
 }
 
+@media (max-width: 576px) {
+  .title {
+    margin-left: 0;
+  }
+}
 .soda {
   float: left;
   margin-left: 25px;
@@ -441,6 +447,14 @@ div.wpforms-container-full .wpforms-form button[type=submit]:active {
 .keep-reading:active {
   color: #0B0C0D !important;
   background: #FDFDFD;
+}
+
+.post-portfolio {
+  margin-top: 400px !important;
+}
+
+.reel a, .reel a:hover {
+  color: #FDFDFD;
 }
 
 .pagination {
