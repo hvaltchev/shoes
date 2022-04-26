@@ -457,6 +457,32 @@ div.wpforms-container-full .wpforms-form button[type=submit]:active {
   color: #FDFDFD;
 }
 
+.booking-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/booking.jpg);
+}
+
+.woocommerce ul.products li.product .price {
+  color: #0B0C0D;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+  border-radius: 0;
+  background-color: none;
+  border: solid 1px #0B0C0D;
+}
+.woocommerce #respond input#submit a:hover, .woocommerce a.button a:hover, .woocommerce button.button a:hover, .woocommerce input.button a:hover {
+  color: #0B0C0D;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  color: #0B0C0D;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  color: #0B0C0D;
+  background-color: none;
+}
+
 .pagination {
   padding-top: 40px;
 }

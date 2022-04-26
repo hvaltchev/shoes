@@ -27,7 +27,7 @@ $home = array(
 <?php get_header(); ?>
 
 <!-- WELCOME -->
-<header data-jarallax data-speed=".8" style="margin-top: -50px; background-image: url(<?php bloginfo('template_url'); ?>/img/soda.jpg);">
+<header data-jarallax data-speed=".8" style="margin-top: -50px; background-image: url(<?php bloginfo('template_url'); ?>/img/header.jpg);">
       <div class="d-flex flex-column min-vh-100 bg-black-50 pt-10 pt-md-8 pb-7 pb-md-0">
         <div class="container my-auto">
           <div class="row justify-content-center">

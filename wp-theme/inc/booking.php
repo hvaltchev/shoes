@@ -4,7 +4,7 @@ Template Name: Booking Router
 */
 ?>
     <section class="pt-7 pt-md-9">
-      <div class="event-lg collapse show bg-cover" style="background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(<?php bloginfo('template_url'); ?>/img/blog-holder.jpg); ?>);">
+      <div class="event-lg collapse show booking-inc bg-cover" style="background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(<?php bloginfo('template_url'); ?>/img/booking.jpg); ?>);">
         <div class="bg-black-50">
           <div class="container">
             <div class="row py-10">
