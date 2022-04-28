@@ -192,12 +192,18 @@ main {
 
 .shop-home {
   width: 100px;
-  margin: 20px auto;
+  margin-bottom: 20px;
 }
 
 .shop-title {
   font-size: 36px;
   color: #FDFDFD;
+}
+
+.shop-desc {
+  color: white;
+  padding-bottom: 20px;
+  margin-top: -10px;
 }
 
 .eyebrow {

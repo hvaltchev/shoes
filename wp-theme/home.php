@@ -56,7 +56,7 @@ $home = array(
 
     <section>
       <div class="row g-0">
-        <div class="col">
+        <div class="col-lg-6 col-sm-12">
           <div class="border bg-light bg-cover youtube-bg">
             <div class="container">
               <div class="row youtube">
@@ -71,15 +71,15 @@ $home = array(
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="border bg-light bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(img/blog-holder.jpg); height: 480px;">
+        <div class="col-lg-6 col-sm-12">
+          <div class="border bg-light bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(<?php bloginfo('template_url'); ?>/img/porfolio-home.jpg); height: 480px;">
             <div class="container">
               <div class="row align-self-end portfolio-home">
                 <div class="col white">
                   <div class="thumb-title-home">The Portfolio</div>
-                  <p>Portaits, landscape, and more</p>
+                    <p>Portaits, landscape, and more</p>
                     <a href="/portfolio/">
-                      <div class="col-sm-4 right cta-button">The Collection</div>
+                      <div class="col-sm-4 right cta-button">View the Work</div>
                     </a>
                 </div>
               </div>
@@ -90,21 +90,24 @@ $home = array(
     </section>
 
     <!-- Shop Feature -->
-    <section class="py-7 py-md-9 bg-light bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(<?php the_field('featured_image'); ?>); height: 350px;">
+    <section class="py-7 py-md-9 bg-light bg-cover" style="background-image: url(<?php the_field('featured_image'); ?>); height: 350px;">
       <div class="container">
-        
-        <div class="row">
-          <div class="eyebrow text-center">Lastest Drop</div>
+        <div class="col-lg-4">
+          
+        <!-- <div class="row">
+            <div class="eyebrow">Lastest Drop</div>
+          </div> -->
+
+          <div class="row">
+            <div class="shop-title"><?php the_field('title'); ?></div>
+            <div class="shop-desc"><?php the_field('description'); ?></div>
+          </div>
+
+          <a href="<?php the_field('shop_link'); ?>">
+            <div class="shop-home cta-button">See Preset</div>
+          </a>
+          
         </div>
-
-        <div class="row">
-          <div class="shop-title text-center"><?php the_field('title'); ?></div>
-        </div>
-
-        <a href="<?php the_field('shop_link'); ?>">
-          <div class="shop-home cta-button">Shop</div>
-        </a>
-
       </div>
     </section>
 
@@ -150,7 +153,7 @@ $home = array(
         <?php if ( $loop->have_posts() ) : ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         
-            <div class="col border bg-cover" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="height: 480px; background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
+            <div class="col-sm-12 col-lg-6 border bg-cover" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo 'style="height: 480px; background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.');"' ?>>
                 <div class="col-12 col-md-8 col-lg-6 text-center blog-post-home center">
                     <h3 class="blog-title-home"><?php the_title(); ?></h3>
                     <a href="<?php the_permalink(); ?>">
