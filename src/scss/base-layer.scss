@@ -1,3 +1,7 @@
+.base-layer {
+  margin-top: 20px;
+}
+
 .download {
   border: 2px solid $black;
   width: 150px !important;
@@ -5,6 +9,7 @@
   padding: 15px;
   color: $black;
   background-color: transparent;
+  margin-bottom: 20px;
 
   &:hover {
       color: $white !important;
@@ -21,7 +26,81 @@
 }
 
 /* Slider */
+* {
+  box-sizing:border-box
+}
 
+img {
+  width:100%;
+  display:block;
+}
+
+.container {
+  width:50%;
+  display:block;
+  margin:30px auto
+}
+
+#before-after-slider {
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  border:3px solid white;
+}
+
+#after-image {
+  display:block
+}
+
+#before-image {
+  position:absolute;
+  height:100%;
+  width:50%;
+  top:0;
+  left:0;
+  overflow:hidden;
+  z-index:2;
+}
+
+#resizer {
+  position:absolute;
+  display:flex;
+  align-items:center;
+  z-index:5;
+  top:0;
+  left:50%;
+  height:100%;
+  width:4px;
+  background:white;
+  /*Stop vertical scrolling on touch*/
+  -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+#resizer:after {
+  background:linear-gradient(62deg,#c93072 5%,#3365c0);
+  font-family: "Font Awesome 5 Free";
+  content:'\f337';
+  font-weight:900;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  position:absolute;
+  margin: 0 0 0 -18px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:3px solid white;
+
+}
+
+@media (max-width:767px) {
+  .container {
+    width:100%;
+    padding:0 20px
+  }
+}
 
 
 /* End Slider */
@@ -46,6 +125,12 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .accordion .label {
+    font-size: 30px;
+  }
+}
+
 .accordion .label::before {
   content: '+';
   color: black;
@@ -67,6 +152,13 @@
   transition: 0.5s;
 }
 
+@media screen and (max-width: 767px) {
+  .accordion .content {
+    font-size: 14px;
+    width: 250px;
+  }
+}
+
 .accordion hr {
   width: 100;
   margin-left: 0;
@@ -75,6 +167,12 @@
 
 .accordion .container.active .content {
   height: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .accordion .container.active .content {
+    height: 280px;
+  }
 }
 
 .accordion .container.active .label::before {
