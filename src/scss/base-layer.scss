@@ -1,0 +1,83 @@
+.download {
+  border: 2px solid $black;
+  width: 150px !important;
+  text-align: center;
+  padding: 15px;
+  color: $black;
+  background-color: transparent;
+
+  &:hover {
+      color: $white !important;
+      background: $black;
+      transition: 0.1s background-color linear, 0.1s color linear;
+      cursor: pointer;
+  }
+  
+  &:active {
+      color: $black !important;
+      background: $black;
+    } 
+
+}
+
+/* Slider */
+
+
+
+/* End Slider */
+
+
+.accordion {
+  color: black;
+  background-color: white;
+  padding: 45px 45px;
+}
+
+.accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+.accordion .label::before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.accordion .content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+.accordion .container.active .content {
+  height: 200px;
+}
+
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 30px;
+}
