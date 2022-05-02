@@ -467,6 +467,177 @@ div.wpforms-container-full .wpforms-form button[type=submit]:active {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/booking.jpg);
 }
 
+.base-layer {
+  margin-top: 20px;
+}
+
+.download {
+  border: 2px solid #0B0C0D;
+  width: 150px !important;
+  text-align: center;
+  padding: 15px;
+  color: #0B0C0D;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+.download:hover {
+  color: #FDFDFD !important;
+  background: #0B0C0D;
+  transition: 0.1s background-color linear, 0.1s color linear;
+  cursor: pointer;
+}
+.download:active {
+  color: #0B0C0D !important;
+  background: #0B0C0D;
+}
+
+/* Slider */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 50%;
+  display: block;
+  margin: 30px auto;
+}
+
+#before-after-slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid white;
+}
+
+#after-image {
+  display: block;
+}
+
+#before-image {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+
+#resizer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 4px;
+  background: white;
+  /*Stop vertical scrolling on touch*/
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+#resizer:after {
+  background: linear-gradient(62deg, #c93072 5%, #3365c0);
+  font-family: "Font Awesome 5 Free";
+  content: "\f337";
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  margin: 0 0 0 -18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+/* End Slider */
+.accordion {
+  color: black;
+  background-color: white;
+  padding: 45px 45px;
+}
+
+.accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .accordion .label {
+    font-size: 30px;
+  }
+}
+.accordion .label::before {
+  content: "+";
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.accordion .content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 18px;
+  text-align: justify;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+  .accordion .content {
+    font-size: 14px;
+    width: 250px;
+  }
+}
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+.accordion .container.active .content {
+  height: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .accordion .container.active .content {
+    height: 280px;
+  }
+}
+.accordion .container.active .label::before {
+  content: "-";
+  font-size: 30px;
+}
+
 .woocommerce ul.products li.product .price {
   color: #0B0C0D;
 }
