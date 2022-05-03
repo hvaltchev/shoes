@@ -75,6 +75,7 @@
     <!-- Theme JS -->
     <script src="<?php bloginfo('template_url'); ?>/js/theme.bundle.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/base-layer.js"></script>
+    <script src="https://kit.fontawesome.com/67ecf81e4e.js" crossorigin="anonymous"></script>
 
   </body>
 </html>

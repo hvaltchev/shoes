@@ -45,7 +45,7 @@ Template Name: Presets
         <div class="spacer"></div>
 
         <!-- Slider -->
-        <div class="container">
+        <div class="container slider">
 
           <div id="before-after-slider">
             <div id="before-image">

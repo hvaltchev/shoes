@@ -99,12 +99,12 @@ $home = array(
           </div> -->
 
           <div class="row">
+          <div class="shop-desc"><?php the_field('description'); ?></div>
             <div class="shop-title"><?php the_field('title'); ?></div>
-            <div class="shop-desc"><?php the_field('description'); ?></div>
           </div>
 
           <a href="<?php the_field('shop_link'); ?>">
-            <div class="shop-home cta-button">See Preset</div>
+            <div class="shop-home cta-button">Free Preset</div>
           </a>
           
         </div>

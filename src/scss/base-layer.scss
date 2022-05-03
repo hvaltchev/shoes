@@ -30,15 +30,14 @@
   box-sizing:border-box
 }
 
-img {
-  width:100%;
+.slider {
   display:block;
-}
+  margin:30px auto;
 
-.container {
-  width:50%;
-  display:block;
-  margin:30px auto
+  img {
+    width:100%;
+    display:block;
+  }
 }
 
 #before-after-slider {
@@ -178,4 +177,8 @@ img {
 .accordion .container.active .label::before {
   content: '-';
   font-size: 30px;
+}
+
+.preset-disclamier {
+  padding-bottom: 40px;
 }

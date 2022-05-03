@@ -202,7 +202,6 @@ main {
 
 .shop-desc {
   color: white;
-  padding-bottom: 20px;
   margin-top: -10px;
 }
 
@@ -496,15 +495,13 @@ div.wpforms-container-full .wpforms-form button[type=submit]:active {
   box-sizing: border-box;
 }
 
-img {
-  width: 100%;
-  display: block;
-}
-
-.container {
-  width: 50%;
+.slider {
   display: block;
   margin: 30px auto;
+}
+.slider img {
+  width: 100%;
+  display: block;
 }
 
 #before-after-slider {
@@ -636,6 +633,10 @@ img {
 .accordion .container.active .label::before {
   content: "-";
   font-size: 30px;
+}
+
+.preset-disclamier {
+  padding-bottom: 40px;
 }
 
 .woocommerce ul.products li.product .price {
