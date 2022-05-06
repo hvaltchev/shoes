@@ -24,7 +24,7 @@ Template Name: Presets
               Base Layer
             </h1>
 
-            <a href="#">
+            <a href="<?php the_field('preset_url'); ?>">
               <div class="download">Download</div>
             </a>
 
@@ -99,15 +99,15 @@ Template Name: Presets
                 <div class="container">
                   <div class="label">Install Instructions</div>
                     <div class="content">
-                      Extract the ZIP file (to your desktop computer, not to your phone).
+                      Download the file to your desktop computer (not to your phone).
                       <br>
                       Open Lightroom and go to the Presets section. 
                       <br>
                       Click on File > Import Profiles & Presets.
                       <br>
-                      Select the presets ZIP file(s) and click Import. → Selecting the ZIP file.
+                      Select the preset file(s) and click Import. → Selecting the preset(s) file.
                       <br>
-                      Restart Lightroom and your presets will now be listed in the Presets section.
+                      Restart Lightroom and your preset(s) will now be listed in the Presets section.
                     </div>
                 </div>
                 <hr>
