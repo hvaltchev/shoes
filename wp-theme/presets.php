@@ -124,7 +124,7 @@ Template Name: Presets
           </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row preset-disclamier justify-content-center">
           <div class="col-12 text-center">Presets are not to be shared or resold in any manner.</div>
         </div>
 
