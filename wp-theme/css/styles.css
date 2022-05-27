@@ -348,54 +348,21 @@ textarea {
   padding: 0 !important;
 }
 
-div.wpforms-container-full .wpforms-form input[type=text] {
+.wp-block-jetpack-contact-form .grunion-field-wrap {
+  border-bottom: 2px solid black !important;
+  border-right: 0 !important;
+}
+
+.wp-block-button__link {
+  margin-top: 20px !important;
+}
+
+.wp-block-jetpack-contact-form input[type=text], .wp-block-jetpack-contact-form input[type=email], .contact-fields {
   margin-left: 0 !important;
 }
 
-div.wpforms-container-full .wpforms-form input[type=email] {
-  margin-left: 0 !important;
-}
-
-div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea {
-  padding: 0;
-}
-
-div.wpforms-container-full .wpforms-form button[type=submit] {
-  border: 2px solid #0B0C0D;
-  width: 200px;
-  text-align: center;
-  padding: 20px;
-  color: #0B0C0D;
-  background-color: transparent;
-}
-div.wpforms-container-full .wpforms-form button[type=submit]:hover {
-  color: #FDFDFD !important;
-  background-color: #0B0C0D !important;
-  transition: 0.1s background-color linear, 0.1s color linear;
-  cursor: pointer;
-}
-div.wpforms-container-full .wpforms-form button[type=submit]:active {
-  color: #FDFDFD !important;
-  background-color: #0B0C0D !important;
-}
-
-.send-button {
-  border: 2px solid #0B0C0D !important;
-  width: 200px;
-  text-align: center;
-  padding: 20px;
-  color: #0B0C0D !important;
-  background-color: transparent !important;
-}
-.send-button:hover {
-  color: #FDFDFD !important;
-  background: #0B0C0D;
-  transition: 0.1s background-color linear, 0.1s color linear;
-  cursor: pointer;
-}
-.send-button:active {
-  color: #FDFDFD !important;
-  background: #0B0C0D;
+.contact-form input[type=email], .contact-form input[type=tel], .contact-form input[type=text], .contact-form input[type=url] {
+  margin-bottom: 0 !important;
 }
 
 .blog h1 {

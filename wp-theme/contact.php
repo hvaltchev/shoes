@@ -45,5 +45,10 @@ Template Name: Contact
   </div>
 </section>
       
+<script>
+  document.getElementById("g100-name").setAttribute("placeholder","Full Name");
+  document.getElementById("g100-email").setAttribute("placeholder","Email Address");
+  document.getElementById("contact-form-comment-g100-message").setAttribute("placeholder","Message");
+</script>
 
 <?php get_footer(); ?>

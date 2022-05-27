@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+  <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="Description" content="SODA & COOKIES is about finding purpose through creative distraction. Follow photographer Mike Watford explore the creative journey." />
     <meta name="author" content="Mike Watford">
@@ -16,11 +16,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/favicon-16x16.png">
-    <link rel="manifest" href="<?php bloginfo('template_directory'); ?>/site.webmanifest">
-    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.sodaandcookies.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.sodaandcookies.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.sodaandcookies.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.sodaandcookies.com/site.webmanifest">
+    <link rel="shortcut icon" href="https://www.sodaandcookies.com/favicon.ico" type="image/x-icon" />
     <meta name="theme-color" content="#ffffff">
     
     <!-- Libs CSS -->
