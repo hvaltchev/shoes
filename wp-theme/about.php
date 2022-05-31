@@ -12,7 +12,7 @@ Template Name: About
             <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6 text-center">
-                <h1 class="display-6 fw-bold text-white">About Me</h1>
+                <h1 class="display-6 fw-bold text-white">About Mike</h1>
                 </div>
             </div>
             </div>
@@ -22,7 +22,7 @@ Template Name: About
     <section class="py-7 py-md-9">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6 text-center">
+          <div class="col-lg-9 text-center">
           
           <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>

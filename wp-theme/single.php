@@ -12,7 +12,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 <article class="pt-10 pt-md-12">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-8 text-center">
+        <div class="col-12 text-center">
 
           <!-- Preheading -->
           <h6 class="text-xs text-primary"><?php the_time('F j, Y'); ?></h6>
@@ -70,7 +70,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
     <?php if ($previous != NULL) { ?>
           <div class="col-lg-6 col-sm-12 border bg-cover" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($previous->ID) ); echo 'style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.'); height: 250px;"' ?>>
             <a href="<?php echo get_permalink($previous->ID); ?>">
-              <div class="col-12 col-md-8 col-lg-6 router-post">
+              <div class="col-12 router-post">
                 <span class="router-eyebrow">Previous Post</span>
                 <h3 class="router-title"><?php echo esc_attr($previous->post_title); ?></h3>
               </div>
@@ -81,7 +81,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 
         <div class="col-lg-6 col-sm-12 border bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(<?php bloginfo('template_url'); ?>/img/router-prev.jpg); height: 250px;">
             <a href="<?php echo get_permalink($previous->ID); ?>">
-              <div class="col-12 col-md-8 col-lg-6 router-post">
+              <div class="col-12 router-post">
                 <span class="router-eyebrow">First things first</span>
                 <h3 class="router-title">Welcome to the begining</h3>
               </div>
@@ -94,7 +94,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 
         <div class="col-lg-6 col-sm-12 border bg-cover" <?php $url = wp_get_attachment_url( get_post_thumbnail_id($next->ID) ); echo 'style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('. $url.'); height: 250px;"' ?>>
           <a href="<?php echo get_permalink($next->ID); ?>">
-            <div class="col-12 col-md-8 col-lg-6 router-post align-right">
+            <div class="col-12 router-post align-right">
               <span class="router-eyebrow">Next Post</span>
               <h3 class="router-title"><?php echo esc_attr($next->post_title); ?></h3>
             </div>
@@ -105,7 +105,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 
         <div class="col-lg-6 col-sm-12 border bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(<?php bloginfo('template_url'); ?>/img/router-next.jpg); height: 250px;">
           <a href="<?php echo get_permalink($next->ID); ?>">
-            <div class="col-12 col-md-8 col-lg-6 router-post align-right">
+            <div class="col-12 router-post align-right">
               <span class="router-eyebrow">Stayed Tuned</span>
               <h3 class="router-title">New stuff coming soon</h3>
             </div>
