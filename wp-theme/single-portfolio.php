@@ -23,87 +23,31 @@
     <section class="py-7 py-md-9">
       <div class="container">
         <div class="row gx-3" data-isotope>
-          <div class="col-6 col-sm-6 col-md-4">
+        
+        <?php
+        if ( get_post_gallery() ) {
 
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_1'); ?>" }'>
-              <img class="img-fluid" src="<?php the_field('gallery_1'); ?>" alt="...">
-            </a>
+            $gallery        = get_post_gallery( get_the_ID(), false );
+            $galleryIDS     = $gallery['ids'];
+            $pieces         = explode(",", $galleryIDS);
 
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
+            foreach ($pieces as $key => $value ) { 
 
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_2'); ?>" }'>
-              <img class="img-fluid" src="<?php the_field('gallery_2'); ?>" alt="...">
-            </a>
+                $image_medium   = wp_get_attachment_image_src( $value, 'medium'); 
+                $image_full     = wp_get_attachment_image_src( $value, 'full'); 
+            ?>
 
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
+            <div class="col-6 col-sm-6 col-md-4">
+                <!-- Item -->
+                <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php echo $image_full[0] ?>" }'>
+                    <img class="img-fluid" src="<?php echo $image_full[0] ?>" alt="...">
+                </a>
+            </div>
+            <?php 
+            }
+        }
+        ?>
 
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_3'); ?>" }'>
-              <img class="img-fluid" src="<?php the_field('gallery_3'); ?>" alt="...">
-            </a>
-
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_4'); ?>" }'>
-              <img class="img-fluid" src="<?php the_field('gallery_4'); ?>" alt="...">
-            </a>
-
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_5'); ?>" }'>
-              <img class="img-fluid" src="<?php the_field('gallery_5'); ?>" alt="...">
-            </a>
-
-          </div>
-          <!-- <div class="col-6 col-sm-6 col-md-4">
-
-            
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_6'); ?>" }'>
-              <img class="img-fluid" src="<?php the_field('gallery_6'); ?>" alt="...">
-            </a>
-
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-
-            
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_7'); ?>" }'>
-              <img class="img-fluid" src="<?php the_field('gallery_7'); ?>" alt="...">
-            </a>
-
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-
-            
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_8'); ?>" }'>
-              <img class="img-fluid" src="<?php the_field('gallery_8'); ?>" alt="...">
-            </a>
-
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-
-            
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_9'); ?>" }'>
-              <img class="img-fluid" src="<?php the_field('gallery_9'); ?>" alt="...">
-            </a>
-
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-
-            
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php the_field('gallery_10'); ?>" }'>
-              <img class="img-fluid" src="<?php the_field('gallery_10'); ?>" alt="...">
-            </a>
-
-          </div> -->
-          
         </div>
       </div>
     </section>

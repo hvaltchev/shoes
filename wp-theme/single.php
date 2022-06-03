@@ -39,11 +39,50 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
       </div>
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
-          <?php the_content(' '); ?> 
+          <?php 
+          $content = get_the_content();
+          $content = preg_replace("/<img[^>]+\>/i", " ", $content);          
+          $content = apply_filters('the_content', $content);
+          $content = str_replace(']]>', ']]>', $content);
+          echo $content;
+          ?>
         </div>
       </div>
     </div>
   </article>
+
+  <!-- GALLERY -->
+  <section class="py-7 py-md-9">
+      <div class="container">
+        <div class="row gx-3" data-isotope>
+        
+        <?php
+        if ( get_post_gallery() ) {
+
+            $gallery        = get_post_gallery( get_the_ID(), false );
+            $galleryIDS     = $gallery['ids'];
+            $pieces         = explode(",", $galleryIDS);
+
+            foreach ($pieces as $key => $value ) { 
+
+                $image_medium   = wp_get_attachment_image_src( $value, 'medium'); 
+                $image_full     = wp_get_attachment_image_src( $value, 'full'); 
+            ?>
+
+            <div class="col-6 col-sm-6 col-md-4">
+                <!-- Item -->
+                <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "<?php echo $image_full[0] ?>" }'>
+                    <img class="img-fluid" src="<?php echo $image_full[0] ?>" alt="...">
+                </a>
+            </div>
+            <?php 
+            }
+        }
+        ?>
+
+        </div>
+      </div>
+    </section>
 
   <section>
     <div class="container">

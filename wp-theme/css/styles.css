@@ -101,6 +101,14 @@ main {
   text-align: center;
 }
 
+.float-left {
+  float: left !important;
+}
+
+.wp-block-button__link {
+  float: left !important;
+}
+
 .white {
   color: #FDFDFD;
 }
