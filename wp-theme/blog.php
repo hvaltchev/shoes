@@ -65,15 +65,15 @@ $wpb_all_query = new WP_Query(array(
       <!-- Pagination -->
       <div class="row g-2 pagination">
       
-        <div class="col-lg-4">
+        <div class="col">
           <?php next_posts_link( 'Older posts', $wpb_all_query ->max_num_pages); ?>
         </div>
         
-        <div class="col-lg-4 text-center">
+        <div class="col text-center">
         <?php echo $paged.' / '.$wpb_all_query->max_num_pages; ?>
         </div>
 
-        <div class="col-lg-4 text-right">
+        <div class="col text-right">
           <?php previous_posts_link( 'Newer posts' ); ?>
         </div>
 

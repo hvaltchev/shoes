@@ -31,8 +31,8 @@ Template Name: Contact
 
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-8 center order-md-1">
+    <div class="row" style="margin: 10px;overflow: hidden;">
+      <div class="col order-md-1">
 
       <?php the_content(' '); ?> 
 

@@ -18,7 +18,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
           <h6 class="text-xs text-primary"><?php the_time('F j, Y'); ?></h6>
 
           <!-- Heading -->
-          <h1 class="display-2 mb-4"><?php the_title(); ?></h1>
+          <h1 class="display-2 mb-4 blog-title"><?php the_title(); ?></h1>
 
           <!-- Subheading -->
           <p class="mb-6">
