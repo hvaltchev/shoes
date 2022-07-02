@@ -28,7 +28,7 @@
     
     <!-- Theme CSS -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.min.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/theme.bundle.css" />
     <?php wp_head(); ?>
     
